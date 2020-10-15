@@ -5,9 +5,13 @@
   z-index: 10;
 }
 
+#nav-bar .navbar-toggler {
+  background-color: white;
+}
+
 .navbar-brand img {
-  height: 50px;
-  padding-left: 30px;
+  height: 60px;
+  padding-left: 20px;
 }
 
 .navbar-nav li {
@@ -20,7 +24,7 @@
 }
 
 #nav-bar ul li a:hover {
-  color: #007bff !important;
+  color: #e4610a !important;
 }
 
 .navbar {
@@ -37,7 +41,7 @@
   font-size: 16px;
 }
 
-/*Slider*/
+/* Slider
 #slider {
   width: 100%;
 }
@@ -51,6 +55,62 @@
 .carousel-caption h5 {
   color: #fff;
   font-size: 42px;
+} */
+
+/*Home*/
+#home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/foto-medio2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #efefef !important;
+  background-attachment: fixed;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+#home h1 {
+  text-align: center;
+  color: #efefef !important;
+  padding-bottom: 10px;
+}
+
+#home h1::after {
+  content: "";
+  background: #efefef;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
+#home h4 {
+  text-align: center;
+}
+
+#home h4 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+#home .col-md-3 {
+  margin: auto;
+}
+
+#home .btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-size: larger;
+  border: 0.5px solid #555;
+}
+
+#home .fa {
+  color: #fff;
+  margin-left: 5px;
+  font-size: 22px;
 }
 
 /*Sobre Nós*/
@@ -60,21 +120,16 @@
   color: #555;
 }
 
-#sobre .btn {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
 .sobre-content {
   padding-top: 20px;
 }
 
 /*Serviços*/
 #servicos {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./img/foto-medio2.jpg);
+  background-color: #eee;
   background-size: cover;
   background-position: center;
-  color: #efefef !important;
+  color: #382884 !important;
   background-attachment: fixed;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -82,13 +137,13 @@
 
 #servicos h1 {
   text-align: center;
-  color: #efefef !important;
+  color: #000000 !important;
   padding-bottom: 10px;
 }
 
 #servicos h1::after {
   content: "";
-  background: #efefef;
+  background: #000000;
   display: block;
   height: 3px;
   width: 170px;
@@ -105,24 +160,32 @@
   padding: 10px;
   height: 80px;
   width: 80px;
-  border: 1px solid #fff;
+  border: 2px solid #382884;
   border-radius: 50%;
 }
 
 #servicos p {
   font-size: 14px;
   margin-top: 20px;
-  color: #ccc;
+  color: black;
 }
 
-.servicos .col-md-3:hover {
+/* .servicos .col-md-3:hover {
   background: #007bff;
   cursor: pointer;
   transition: 0.7s;
+} */
+
+.servicos .col-md-3 {
+  background-color: #fff;
+  border: 2px solid #382884;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 15px;
 }
 
 /*Preços*/
-#precos {
+/* #precos {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/foto-medio.jpg);
   background-size: cover;
   background-position: center;
@@ -132,34 +195,45 @@
   padding: 100px;
   font-family: sans-serif;
   font-size: 38px;
-}
+} */
 
 /*Planos*/
-#planos h1 {
-  text-align: left;
-  color: #555 !important;
-  padding-bottom: 10px;
+/* #planos h3 {
+  text-align: center;
+  color: rgb(255, 255, 255) !important;
+  padding-bottom: 5px;
+} */
+
+#planos {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #555;
 }
 
 #planos {
   padding: 40px 0;
-  background: #efefef;
 }
 
+/* #planos .col-md-3 {
+  margin: auto;
+} */
+
 .single-price {
-  margin: 10px auto;
+  margin: auto;
   display: inline;
   float: left;
   width: 100%;
   background-color: #fff;
   transition: 0.5s;
+
+  border-radius: 30px;
 }
 
 .single-price:hover {
   box-shadow: 0 2px 20px #333;
 }
 
-.price-head {
+/* .price-head {
   background-color: #2196f3;
   display: inline;
   float: left;
@@ -181,7 +255,7 @@
   color: #ccc;
   font-weight: bold;
   line-height: 30px;
-}
+} */
 
 #price span {
   font-size: 15px;
@@ -198,25 +272,21 @@
   border-bottom: 1px solid #efefef;
   padding: 15px 10px;
   list-style: none;
+  font-size: 20px;
+  border-bottom: 1px solid #382884;
 }
 
-ul li:last-child {
+/* ul li:last-child {
   border: none;
-}
+} */
 
-.fa-check-circle {
-  color: green;
+.price-content .fa {
+  color: #382884;
   margin-right: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
-.fa-times-circle {
-  color: red;
-  margin-right: 10px;
-  font-size: 20px;
-}
-
-.price-button {
+/* .price-button {
   display: inline;
   float: left;
   padding: 15px 15px 30px;
@@ -236,22 +306,18 @@ ul li:last-child {
 .buy-btn:hover {
   border-color: 1px solid #fff;
   background-color: #3f51b5;
-}
-
-a {
-  text-decoration: none !important;
-  color: #fff !important;
-}
+} */
 
 /*Clientes*/
 #clientes {
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: #eee;
 }
 
 #clientes h1 {
   text-align: center;
-  color: #555 !important;
+  color: rgb(0, 0, 0) !important;
   padding-bottom: 10px;
 }
 
@@ -265,7 +331,7 @@ a {
 
 .profile {
   padding: 70px 10px 10px;
-  background-color: #efefef;
+  background-color: #fff;
 }
 
 .profile:hover {
@@ -308,4 +374,83 @@ a {
 
 video {
   margin-left: 0px;
+}
+
+/*Formulario*/
+#contact {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #777;
+}
+
+.contact-form {
+  padding: 15px;
+  background-color: #999;
+}
+
+.form-control {
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+::placeholder {
+  color: #999 !important;
+}
+
+/* .follow {
+  background: #eee;
+  padding: 10px;
+  margin: 15px;
+} */
+
+/*Footer*/
+footer {
+  padding: 5px;
+  background-color: #382884;
+}
+
+footer .final-text {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer .social {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+footer .social a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 20px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+footer .social a:hover {
+  color: #e4610a;
+}
+
+/*copyright*/
+.copyright {
+  background-color: #382884;
+  border-top: 1px solid #1d1d27;
+  padding: 15px;
+}
+
+.copyright p {
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
 }
