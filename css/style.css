@@ -1,3 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,700&family=Poppins:wght@300;400&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  text-align: center;
+  color: #e4610a !important;
+  padding-bottom: 10px;
+  font-family: Merriweather;
+  font-weight: 900;
+}
+
+h1::after {
+  content: "";
+  background: #e4610a;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
 /*Navigation*/
 #nav-bar {
   position: sticky;
@@ -11,6 +34,7 @@
 
 .navbar-brand img {
   height: 60px;
+  width: 80px;
   padding-left: 20px;
 }
 
@@ -38,7 +62,7 @@
 .nav-link {
   color: white !important;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 /* Slider
@@ -59,7 +83,7 @@
 
 /*Home*/
 #home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/foto-medio2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/foto-medio2.jpg);
   background-size: cover;
   background-position: center;
   color: #efefef !important;
@@ -85,10 +109,9 @@
 
 #home h4 {
   text-align: center;
-}
-
-#home h4 {
+  font-family: Poppins;
   font-size: 20px;
+  font-weight: 400;
   margin-top: 20px;
   margin-bottom: 40px;
   color: #ccc;
@@ -115,14 +138,54 @@
 
 /*Sobre Nós*/
 #sobre {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   color: #555;
 }
 
-.sobre-content {
-  padding-top: 20px;
+#sobre .col-md-6 {
+  margin: auto;
 }
+
+.sobre-content {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.sobre-content h3 {
+  font-size: 19px;
+  font-family: Poppins;
+}
+
+/* #sobre .profile {
+  background-color: none;
+}
+#sobre .profile:hover {
+  transition: none;
+} */
+
+#sobre .user {
+  width: 190px;
+  height: 170px;
+  border-radius: 50%;
+  border: 2px solid #382884;
+}
+
+/* #sobre .profile img {
+  margin-top: 60px;
+  position: absolute;
+  border: 10px solid #fff;
+} */
+
+#sobre .col-md-4 {
+  margin: auto;
+}
+
+/* #sobre .profile h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #007bff;
+} */
 
 /*Serviços*/
 #servicos {
@@ -131,27 +194,12 @@
   background-position: center;
   color: #382884 !important;
   background-attachment: fixed;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-#servicos h1 {
-  text-align: center;
-  color: #000000 !important;
-  padding-bottom: 10px;
-}
-
-#servicos h1::after {
-  content: "";
-  background: #000000;
-  display: block;
-  height: 3px;
-  width: 170px;
-  margin: 20px auto 5px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .servicos {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .icon {
@@ -160,21 +208,25 @@
   padding: 10px;
   height: 80px;
   width: 80px;
-  border: 2px solid #382884;
+  border: 3px solid#e4610a;
   border-radius: 50%;
 }
 
+.icon .fas {
+  color: #e4610a;
+}
+
 #servicos p {
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 20px;
   color: black;
 }
 
-/* .servicos .col-md-3:hover {
-  background: #007bff;
+.servicos .col-md-3:hover {
+  background: rgba(204, 204, 204, 0.705);
   cursor: pointer;
   transition: 0.7s;
-} */
+}
 
 .servicos .col-md-3 {
   background-color: #fff;
@@ -182,6 +234,13 @@
   border-radius: 5px;
   margin: auto;
   margin-bottom: 15px;
+  /* height: 450px; */
+}
+
+#servicos p {
+  font-size: 17px;
+  font-family: Poppins;
+  font-weight: 400;
 }
 
 /*Preços*/
@@ -198,25 +257,49 @@
 } */
 
 /*Planos*/
-/* #planos h3 {
+/* #populares h3 {
   text-align: center;
   color: rgb(255, 255, 255) !important;
   padding-bottom: 5px;
 } */
 
-#planos {
+#populares h3 {
+  color: #999;
+  font-size: 23px;
+  color: #e4610a;
+}
+
+#populares {
   padding-top: 50px;
-  padding-bottom: 50px;
   color: #555;
 }
 
-#planos {
+#populares {
   padding: 40px 0;
+  text-align: center;
 }
 
-/* #planos .col-md-3 {
+#populares .col-md-5 {
   margin: auto;
-} */
+}
+
+.price-page {
+  background-color: #382884;
+  width: 165px;
+  height: 35px;
+  margin: auto;
+  border-radius: 5%;
+}
+
+.price-page:hover {
+  background-color: #e4610a;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+#populares h3:hover {
+  color: #382884;
+}
 
 .single-price {
   margin: auto;
@@ -225,13 +308,12 @@
   width: 100%;
   background-color: #fff;
   transition: 0.5s;
-
   border-radius: 30px;
 }
 
-.single-price:hover {
+/* .single-price:hover {
   box-shadow: 0 2px 20px #333;
-}
+} */
 
 /* .price-head {
   background-color: #2196f3;
@@ -257,8 +339,15 @@
   line-height: 30px;
 } */
 
-#price span {
-  font-size: 15px;
+/* #price span {
+  font-size: 35px;
+  background-color: red;
+} */
+
+#populares li {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .price-content {
@@ -271,19 +360,30 @@
 .price-content ul li {
   border-bottom: 1px solid #efefef;
   padding: 15px 10px;
+  text-align: left;
   list-style: none;
   font-size: 20px;
-  border-bottom: 1px solid #382884;
+  border-bottom: 1px solid #e4610a;
 }
 
 /* ul li:last-child {
   border: none;
 } */
 
+.price-content .fas {
+  color: #382884;
+  margin-right: 10px;
+  font-size: 25px;
+}
+
 .price-content .fa {
   color: #382884;
   margin-right: 10px;
   font-size: 25px;
+}
+
+video {
+  margin: auto;
 }
 
 /* .price-button {
@@ -315,14 +415,13 @@
   background-color: #eee;
 }
 
-#clientes h1 {
-  text-align: center;
-  color: rgb(0, 0, 0) !important;
-  padding-bottom: 10px;
-}
-
 #clientes .row {
   margin-top: 30px;
+}
+
+#clientes p {
+  font-size: 17px;
+  color: #555;
 }
 
 .col-md-4 {
@@ -356,7 +455,7 @@
 .profile h3 {
   font-size: 20px;
   margin-top: 15px;
-  color: #007bff;
+  color: #382884;
 }
 
 #clientes span {
@@ -365,15 +464,11 @@
 }
 
 .fa-quote-left {
-  color: #007bff;
+  color: #382884;
 }
 
 .fa-quote-right {
-  color: #007bff;
-}
-
-video {
-  margin-left: 0px;
+  color: #382884;
 }
 
 /*Formulario*/
@@ -385,7 +480,7 @@ video {
 
 .contact-form {
   padding: 15px;
-  background-color: #999;
+  background-color: #372884c0;
 }
 
 .form-control {
